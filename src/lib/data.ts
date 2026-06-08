@@ -1,0 +1,65 @@
+export const bibleTopics = [
+  {
+    id: "anxiety",
+    keywords: [
+      "anxiety",
+      "worry",
+      "stress",
+      "anxious",
+      "焦虑",
+      "忧虑",
+      "担忧",
+      "压力",
+      "紧张"
+    ],
+
+    verses: [
+      {
+        ref: "Isaiah 41:10",
+        text: "Do not fear, for I am with you; do not be dismayed."
+      },
+      {
+        ref: "Philippians 4:6-7",
+        text: "Do not be anxious about anything..."
+      }
+    ],
+
+    message:
+      "God encourages you not to be anxious. He is with you in every situation.",
+
+    prayer:
+      "Lord, calm my anxious heart and give me peace."
+  },
+
+  {
+    id: "fear",
+
+    keywords: [
+      "fear",
+      "afraid",
+      "scared",
+      "terror",
+      "害怕",
+      "恐惧",
+      "惧怕",
+      "担心"
+    ],
+
+    verses: [
+      {
+        ref: "Joshua 1:9",
+        text: "Be strong and courageous. Do not be afraid."
+      },
+      {
+        ref: "Psalm 23:4",
+        text: "I will fear no evil, for you are with me."
+      }
+    ],
+
+    message:
+      "God promises His presence removes fear.",
+
+    prayer:
+      "Lord, replace my fear with faith in You."
+  }
+]

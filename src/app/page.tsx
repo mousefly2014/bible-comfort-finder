@@ -1,17 +1,24 @@
 "use client"
 
 import { useState } from "react"
-import { bibleData } from "@/lib/data"
+import { bibleTopics } from "@/lib/data"
 
 export default function Home() {
   const [input, setInput] = useState("")
   const [result, setResult] = useState<any>(null)
 
-  const handleSearch = () => {
-    const key = input.toLowerCase().trim()
-    setResult(bibleData[key] || null)
-  }
+const handleSearch = () => {
+  const keyword = input.trim().toLowerCase()
 
+  const found = bibleTopics.find(topic =>
+    topic.keywords.some(k =>
+    k.toLowerCase().includes(keyword) ||
+      keyword.includes(k.toLowerCase())
+    )
+  )
+
+  setResult(found || null)
+}
   return (
     <div>
       <h1>Bible Comfort Finder</h1>
