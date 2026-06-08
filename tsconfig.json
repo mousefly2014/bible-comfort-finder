@@ -5,7 +5,6 @@
       "dom.iterable",
       "esnext"
     ],
-    "ignoreDeprecations": "6.0",
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -21,6 +20,7 @@
     "paths": {
       "@/*": ["src/*"]
     },
+     "ignoreDeprecations": "6.0",
     "plugins": [
       {
         "name": "next"
